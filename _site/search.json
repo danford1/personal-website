@@ -1,0 +1,51 @@
+[
+  
+    {
+      "title"    : "Map of States with Face Mask Laws During the COVID-19 Pandemic",
+      "category" : "",
+      "tags"     : "JavaScript, Mapbox, Spatial Analysis",
+      "url"      : "/blog/Face-Mask-Laws-During-Pandemic",
+      "date"     : "2020-04-21 00:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "How to Make a DIY National Park Map Face Mask for COVID Protection",
+      "category" : "",
+      "tags"     : "Mapping",
+      "url"      : "/blog/Make-Map-Face-Mask",
+      "date"     : "2020-04-20 00:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Query Rendered Features Within a Bounding Box with Mapbox GL JS and Turf.js",
+      "category" : "",
+      "tags"     : "JavaScript, Mapbox, Spatial Analysis",
+      "url"      : "/blog/Query-Rendered-Features-Within-Bounding-Box-MapboxGLJS-Turf",
+      "date"     : "2020-04-17 00:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Separate a Mapbox Geocoder Address Search Box from the Map",
+      "category" : "",
+      "tags"     : "JavaScript, CSS, Design, Mapbox",
+      "url"      : "/blog/separate-Mapbox-address-search",
+      "date"     : "2020-03-31 00:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Multiple Layouts with Different Data for One Area of Interest in ArcGIS Pro",
+      "category" : "",
+      "tags"     : "Cartography, Design, GIS, ArcGIS Pro",
+      "url"      : "/blog/ArcGIS-map-series-different-data",
+      "date"     : "2020-03-31 00:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Shadow Effect on Point Symbols in ArcGIS Pro",
+      "category" : "",
+      "tags"     : "Cartography, Design, GIS, ArcGIS Pro",
+      "url"      : "/blog/ArcGIS-point-symbol-shadow-effect",
+      "date"     : "2020-03-25 00:00:00 -0400"
+    } 
+  
+]

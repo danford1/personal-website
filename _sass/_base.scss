@@ -1,0 +1,51 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+a {
+    color: $primary;
+}
+
+.text-primary {
+    color: $secondary!important;
+}
+
+.border-primary {
+    border-color: $secondary!important;
+}
+
+.badge-dark {
+    color: #fff;
+    background-color: $secondary;
+}
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.bg-primary {
+    background-color: $secondary!important;
+}
+
+#main-subtitle {
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    color: $secondary;
+    background-color: #fff;
+    border-color: $primary;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}

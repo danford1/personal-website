@@ -1,0 +1,74 @@
+### Site Settings ###
+title               : Dan Ford
+description         : >-
+                      maps | design | software | conservation
+cta1_url            : /projects
+cta1_desc           : Check out my latest projects
+cta2_url            : https://www.windrosemaps.com
+cta2_desc           : Shop my maps
+baseurl             : ""
+repository          : danford1/danford1.github.io
+# remote_theme        : YoussefRaafatNasry/portfolYOU
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude: # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Dan Ford
+  image             : /assets/images/dan.jpg
+  linkedin          : dan-ford-maps
+  instagram         : danfordoutdoors
+  twitter           : danjford
+  github            : danford1
+# behance           : your_username
+# dribbble          : your_username
+# email             : username@domain.com
+# facebook          : your_username
+# gitlab            : your_username
+# medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
