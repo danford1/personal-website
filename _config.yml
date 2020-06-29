@@ -46,6 +46,12 @@ author:
 # vimeo             : your_username
 # youtube           : your_channel_name
 
+### Analytics ###
+analytics:
+  enabled: true # Set true to enable analytics
+  google:
+    tracking_id: UA-171153643-1
+
 
 ### Posts ###
 permalink: /blog/:title
