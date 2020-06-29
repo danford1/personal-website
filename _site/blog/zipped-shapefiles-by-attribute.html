@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="maps | design | software | conservation">
+
+  <title>Dan Ford</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/"><h5><b>Dan Ford</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h3>Export Shapefiles by Attribute Name and Save Each to a Zip File</h3>
+
+<p class="post-metadata text-muted">
+  26 May 2020 -
+  <i>4 mins read time</i>
+
+  <br>Tags:
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#mapping">
+      <span class="tag badge badge-pill text-primary border border-primary">Mapping</span>
+    </a>
+    </p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Author: Brian Greer - http://www.bgcarto.com/zip-all-shapefiles-in-directory-individually/
+</span>
+<span class="c1">#directory of shapefiles to zip for zipping individual shapefiles
+</span>
+<span class="c1">#import modules needed
+</span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">from</span> <span class="nn">zipfile</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1">#define location of shapefiles and destination of zipped shapefiles
+</span><span class="n">source</span> <span class="o">=</span> <span class="s">r"C:\Users\uname\folder"</span>
+<span class="n">dest</span> <span class="o">=</span> <span class="s">r"C:\Users\uname\folder\zip"</span>
+
+<span class="c1">#change the current directory
+</span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+
+<span class="c1">#test current directory
+</span><span class="n">retval</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">retval</span><span class="p">)</span>
+
+<span class="c1">#list all files with extension .shp
+</span><span class="n">shps</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">source</span><span class="o">+</span><span class="s">"/*.shp"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">shps</span><span class="p">)</span>
+
+<span class="c1"># create empty list for zipfile names
+</span><span class="n">ziplist</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># create destination directory if it does not exist
+</span><span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">dest</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">dest</span><span class="p">)</span>
+
+<span class="c1">#populate ziplist list of unique shapefile root names by finding all files with .shp extension and removing extension
+</span><span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">shps</span><span class="p">:</span>
+  <span class="c1">#prints full path for each shapefile
+</span>  <span class="k">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="c1">#retrieves just the files name for each name in shps
+</span>  <span class="nb">file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="c1">#removes .shp extension
+</span>  <span class="n">names</span> <span class="o">=</span> <span class="nb">file</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span>
+  <span class="c1">#adds each shapefile name to ziplist list
+</span>  <span class="n">ziplist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+
+<span class="c1">#prints ziplist to confirm shapefile root names have been added
+</span><span class="k">print</span><span class="p">(</span><span class="n">ziplist</span><span class="p">)</span>
+
+<span class="c1">#creates zipefiles in dest folder with basenames
+</span><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">ziplist</span><span class="p">:</span>
+  <span class="c1"># prints each itme in the ziplist
+</span>  <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+  <span class="c1">#creates the name for each zipefile based on shapefile root names
+</span>  <span class="n">file_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">f</span><span class="o">+</span><span class="s">".zip"</span><span class="p">)</span>
+  <span class="c1">#print to confirm
+</span>  <span class="k">print</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+  <span class="c1">#created the zipfiles with names defined above
+</span>  <span class="n">zips</span> <span class="o">=</span> <span class="n">ZipFile</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">zips</span><span class="p">)</span>
+  <span class="c1">#files lists all files with the current basename (f) from ziplist
+</span>  <span class="n">files</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">+</span><span class="s">".*"</span><span class="p">)</span>
+  <span class="c1"># iterate through each basename and add all shapefile components to the zipefile
+</span>  <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">zips</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+  <span class="n">zips</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.linkedin.com/in/dan-ford-maps"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.instagram.com/danfordoutdoors"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#405de6'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-instagram fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/danjford"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/danford1"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a>
+
+</div>
+
+
+
+  <small class="text-muted mb-2">
+    <i class="far fa-copyright"></i> <strong>Dan Ford</strong>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+</body>
+
+</html>

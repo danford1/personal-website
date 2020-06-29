@@ -1,19 +1,19 @@
 [
   
     {
+      "title"    : "Export Shapefiles by Attribute Name and Save Each to a Zip File",
+      "category" : "",
+      "tags"     : "Mapping",
+      "url"      : "/blog/zipped-shapefiles-by-attribute",
+      "date"     : "2020-05-26 00:00:00 -0400"
+    } ,
+  
+    {
       "title"    : "Map of States with Face Mask Laws During the COVID-19 Pandemic",
       "category" : "",
       "tags"     : "JavaScript, Mapbox, Spatial Analysis",
       "url"      : "/blog/Face-Mask-Laws-During-Pandemic",
       "date"     : "2020-04-21 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "How to Make a DIY National Park Map Face Mask for COVID Protection",
-      "category" : "",
-      "tags"     : "Mapping",
-      "url"      : "/blog/Make-Map-Face-Mask",
-      "date"     : "2020-04-20 00:00:00 -0400"
     } ,
   
     {
