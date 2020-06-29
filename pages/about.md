@@ -9,10 +9,10 @@ weight: 3
 
 Hi, I'm {{ site.author.name }} :wave:<br>
 
-I developed a well-rounded background in environmental science earning a triple major in agriculture and natural resource management, wildlife ecology, and entomology at the University of Delaware. After taking a course in geographical information systems, I also grew deeply interested in mapping and cartography.
+I studied environmental science earning a triple major in agriculture and natural resource management, wildlife ecology, and entomology at the University of Delaware. After taking a course in geographical information systems, I also became deeply interested in mapping and cartography.
 
 I was able to grow my knowledge in both environmental science and mapping while working on natural resource protection, regulatory compliance, and siting projects at consulting and engineering firms. I expanded my skillset while working at a geospatial software company, contributing to community projects that had a positive civic, social, and environmental impact.
 
-Now, I'm excited to be able to apply my experience to focus directly on land and natural resource protection at a nonprofit land trust.
+Now, I'm excited to be able to apply my experience to focus on land and natural resource protection at a nonprofit land trust.
 
-I love to learn and spend most of my free time [after the baby goes to sleep] studying new software technologies, building my knowledge in programming, and designing maps.
+I love to learn, and spend most of my free time [after the baby goes to sleep] studying new software technologies, building my knowledge in programming, and designing maps.
