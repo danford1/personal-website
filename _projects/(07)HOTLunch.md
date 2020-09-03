@@ -2,7 +2,7 @@
 name: HOTLunch
 tools: [Mapping, Volunteering]
 image: /assets/images/projects/project-hotlunch-01.jpg
-description: A monthly opportunity for you to donate your lunch break to use mapping to support natural disaster response.
+description: A monthly opportunity for you to donate your lunch break to support natural disaster response by mapping vulnerable areas.
 ---
 
 # HOTLunch
