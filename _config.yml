@@ -1,6 +1,9 @@
 ### Site Settings ###
 title               : Dan Ford
-description         : >-
+description         : Owner of Windrose Maps. Author and Illustrator of Map Projections for Babies. Conservationist passionate about land preservation.
+image               : /assets/images/meta.jpg
+url                 : "http://www.danford.us"
+subtitle         : >-
                       maps | design | software | conservation
 cta1_url            : /projects
 cta1_desc           : Check out my latest projects
@@ -8,12 +11,19 @@ cta2_url            : https://www.windrosemaps.com
 cta2_desc           : Shop my maps
 baseurl             : ""
 repository          : danford1/danford1.github.io
-# remote_theme        : YoussefRaafatNasry/portfolYOU
 
+social:
+  name: Dan Ford
+  links:
+  - https://twitter.com/danjford
+  - https://www.linkedin.com/in/dan-ford-maps
+  - https://github.com/danford1
 
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 ### Navbar Settings ###
