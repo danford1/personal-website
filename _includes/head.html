@@ -13,6 +13,12 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 
+  <!-- Open Graph Meta Image -->
+  <meta property="og:image" content="{{ '/assets/images/meta.jpg' | relative_url }}">
+
+  <!-- Twitter Meta Image -->
+  <meta property="twitter:image" content="{{ '/assets/images/meta.jpg' | relative_url }}">
+
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
@@ -25,5 +31,5 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" type="text/css">
 
-  {% seo %}
+  {% seo title=false %}
 </head>
