@@ -2,6 +2,6 @@
 name: Map Projections for Babies
 tools: [Cartographic Design, Mapping]
 image: /assets/images/projects/project-babymapbook-01.png
-description: I wrote and illustrated a book for my daughter. Now I'm launching a Kickstarter campaign to raise funds for the first print run of <i>Map Projections for Babies</i> !
+description: A board book for babies (and their loved ones) that describes the concept of stretching and bending the globe to make a map.
 external_url: https://mapsforbabies.com
 ---
