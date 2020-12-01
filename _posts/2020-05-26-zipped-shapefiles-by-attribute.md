@@ -7,11 +7,26 @@ color: primary
 description: Follow three steps to get a zipped shapefile of each field value in a spatial data set.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Social post:
+Are you using software that requires zipped shapefiles for upload?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A method for splitting a shapefile into individual files based on an attribute value, and then zipping each shapefile based on its name.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## 1. Create and format shapefile
+
+Have an attribute field on which you will base the separation.
+
+## 2. Use tool in GIS software to zip base on Attribute
+
+### ArcGIS Pro
+
+### QGIS
+
+
+## 3. Run script to zip each shapefile
+
+This step is helpful if you need to upload shapefiles to a service that accepts zipped shapefiles. I'm using Landscape, a mobile data collection and property data management system for land conservation. We have Landscape set up with unique pages for each preserved property, including a map that show the protected area boundary.
 
 ``` python
 #Author: Brian Greer - http://www.bgcarto.com/zip-all-shapefiles-in-directory-individually/
