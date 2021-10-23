@@ -1,7 +1,18 @@
 <div class="card-group mt-2">
-
+<!-- BLOG -->
   {% for post in site.posts %}
+
+    {%- assign post_name  = post.name -%}
+    {%- assign post_img   = post.image -%}
+    {%- assign post_id    = post.name | slugify -%}
+
+    {%- if post.external_url -%}
+      {%- assign post_url = post.external_url -%}
+    {%- else -%}
+      {%- assign post_url = post.url | relative_url -%}
+    {%- endif -%}
+
     {% include blog/post-card.html %}
   {% endfor %}
-
+<!-- BLOG -->
 </div>

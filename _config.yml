@@ -5,11 +5,11 @@ description: Owner of Windrose Maps. Author and Illustrator of Map Projections f
 image: /assets/images/meta.png
 url: "http://www.danford.us"
 subtitle: >-
-          maps | design | software | conservation
-cta1_url: /projects
-cta1_desc: Check out my latest projects
-cta2_url: https://www.windrosemaps.com
-cta2_desc: Shop my maps
+          conservation | design | maps | technology
+cta1_url: /blog
+cta1_desc: Read my latest posts
+cta2_url: /projects
+cta2_desc: Check out my projects
 baseurl: ""
 repository: danford1/danford1.github.io
 
@@ -29,7 +29,6 @@ plugins:
 
 ### Navbar Settings ###
 nav_exclude: # The following paths are excluded from navbar
-  - pages/blog.html
   - pages/tags.html
   - pages/404.html
   - pages/index.md
@@ -90,3 +89,4 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - vendor

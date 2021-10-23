@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
 .badge {
@@ -8,6 +8,30 @@ body {
 
 a {
     color: $primary;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1.0rem;
 }
 
 .text-primary {
@@ -48,4 +72,33 @@ a {
     border-color: $primary;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: none;
+}
+
+.mark, mark {
+    padding: .3em;
+    background-color: $highlight;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+      padding: 2rem;
+  }
+
+  .jumbotron > div {
+    padding: 1rem;
+  }
+
+  .jumbtron-text {
+    padding: 1rem;
+  }
+
 }
