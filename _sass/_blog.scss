@@ -3,22 +3,46 @@
 }
 
 .post.card {
+  border: 1px solid #ced4da;
   border-radius: $rounded-borders;
   text-decoration: none !important;
-  padding: 15px;
+  // padding: 15px 0;
+  // margin: 10px auto;
   height: 100%;
+
+
+  .card-img-top {
+    border-radius: $rounded-borders $rounded-borders 0 0;
+  }
 
   .card-footer {
     font-size: 14px;
-    margin: 0 -15px -15px -15px;
+    margin: 0;
     padding: 15px 35px;
+  }
+
+  transition: transform 400ms;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
   }
 }
 
 .post {
+
+  body {
+    line-height: 1.6;
+  }
+
   .post-metadata {
     font-size: 14px;
     margin-top: -6px;
+    margin-bottom: 20px;
+  }
+
+  .badge {
+    text-transform: uppercase;
   }
 
   .tag:hover {
@@ -49,7 +73,7 @@
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 1rem auto;
+    // margin: 1rem auto;
   }
 
   .video {
@@ -112,7 +136,7 @@
   }
 
   blockquote {
-    border-left: 0.25em solid $primary;
+    border-left: 0.25em solid $secondary;
     color: $secondary;
     padding: 0 1em;
   }

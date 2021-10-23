@@ -279,11 +279,23 @@
 .highlight .cpf { color: #aaaaaa; font-style: italic; }
 
 /* Comment.PreprocFile */
-body { font-family: "Open Sans", sans-serif; }
+body { font-family: "Cabin", sans-serif; }
 
 .badge { font-weight: 500; }
 
 a { color: #0d7eab; }
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.6rem; }
+
+h3 { font-size: 1.4rem; }
+
+h4 { font-size: 1.2rem; }
+
+h5 { font-size: 1.1rem; }
+
+h6 { font-size: 1.0rem; }
 
 .text-primary { color: #6c757d !important; }
 
@@ -301,17 +313,28 @@ a { color: #0d7eab; }
 
 .form-control:focus { color: #6c757d; background-color: #fff; border-color: #0d7eab; outline: 0; box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
 
+.list-group-item { position: relative; display: block; padding: .75rem 1.25rem; margin-bottom: -1px; background-color: #fff; border: none; }
+
+.mark, mark { padding: .3em; background-color: #bfedff; }
+
+@media (min-width: 576px) { .jumbotron { padding: 2rem; }
+  .jumbotron > div { padding: 1rem; }
+  .jumbtron-text { padding: 1rem; } }
 .search-box { box-shadow: none !important; }
 
-.post.card { border-radius: 15px; text-decoration: none !important; padding: 15px; height: 100%; }
-.post.card .card-footer { font-size: 14px; margin: 0 -15px -15px -15px; padding: 15px 35px; }
+.post.card { border: 1px solid #ced4da; border-radius: 15px; text-decoration: none !important; height: 100%; transition: transform 400ms; }
+.post.card .card-img-top { border-radius: 15px 15px 0 0; }
+.post.card .card-footer { font-size: 14px; margin: 0; padding: 15px 35px; }
+.post.card:hover { transform: translateY(-8px); box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24); }
 
-.post .post-metadata { font-size: 14px; margin-top: -6px; }
+.post body { line-height: 1.6; }
+.post .post-metadata { font-size: 14px; margin-top: -6px; margin-bottom: 20px; }
+.post .badge { text-transform: uppercase; }
 .post .tag:hover { background-color: #6c757d; color: white !important; }
 .post footer { font-size: 10px; color: #6c757d; text-decoration: underline; text-decoration-color: yellow; text-align: right; margin-top: 4em; margin-right: 2em; }
 .post h1, .post h2 { margin-top: 32px; }
 .post hr { background: #6c757d; }
-.post img:not(.emoji) { display: block; max-width: 100%; height: auto; margin: 1rem auto; }
+.post img:not(.emoji) { display: block; max-width: 100%; height: auto; }
 .post .video { position: relative; padding-bottom: 56.25%; margin-bottom: 1rem; width: 100%; }
 .post .video iframe { position: absolute; height: 100%; width: 100%; }
 .post a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline) { display: inline-block; text-decoration: none; }
@@ -320,7 +343,7 @@ a { color: #0d7eab; }
 .post a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline):hover::after { width: 100%; }
 .post pre { background: #f8f9fa; border: 1px solid #ddd; color: #343a40; font-family: monospace; font-size: 14px; line-height: 20px; margin-bottom: 1.6em; max-width: 100%; padding: 1em 1.5em; display: block; page-break-inside: avoid; overflow: auto; word-wrap: break-word; }
 .post code.highlighter-rouge { background-color: #f8f9fa; color: #343a40; border-radius: 3px; margin: 0; padding: 0.2em 0.65em; }
-.post blockquote { border-left: 0.25em solid #0d7eab; color: #6c757d; padding: 0 1em; }
+.post blockquote { border-left: 0.25em solid #6c757d; color: #6c757d; padding: 0 1em; }
 .post table { display: block; overflow-x: auto; margin: 1rem 0; }
 .post table td, .post table th { border: 1px solid #ddd; padding: 8px 16px; }
 .post table th { padding-top: 12px; padding-bottom: 12px; font-weight: 500; text-align: left; background-color: #0d7eab; color: white; }

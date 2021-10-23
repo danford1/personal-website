@@ -1,51 +1,51 @@
 [
   
     {
-      "title"    : "Export Shapefiles by Attribute Name and Save Each to a Zip File",
+      "title"    : "Build Your Land Trust Tech Stack",
       "category" : "",
-      "tags"     : "Mapping",
-      "url"      : "/blog/zipped-shapefiles-by-attribute",
-      "date"     : "2020-05-26 00:00:00 -0400"
+      "tags"     : "Cartography, Design, Mapping, Project",
+      "url"      : "/blog/build-your-land-trust-tech-stack",
+      "date"     : "2021-10-22 00:00:00 -0500"
     } ,
   
     {
-      "title"    : "Map of States with Face Mask Laws During the COVID-19 Pandemic",
+      "title"    : "The Story Behind the Story&amp;colon; Why I Wrote Map Projections for Babies",
       "category" : "",
-      "tags"     : "JavaScript, Mapbox, Spatial Analysis",
-      "url"      : "/blog/Face-Mask-Laws-During-Pandemic",
-      "date"     : "2020-04-21 00:00:00 -0400"
+      "tags"     : "Cartography, Design, Mapping, Project",
+      "url"      : "/blog/story-behind-the-story",
+      "date"     : "2021-09-07 00:00:00 -0500"
     } ,
   
     {
-      "title"    : "Query Rendered Features Within a Bounding Box with Mapbox GL JS and Turf.js",
+      "title"    : "How to Convert Geodatabase Spatial Data and Related Tables to Vector Tiles",
       "category" : "",
-      "tags"     : "JavaScript, Mapbox, Spatial Analysis",
-      "url"      : "/blog/Query-Rendered-Features-Within-Bounding-Box-MapboxGLJS-Turf",
-      "date"     : "2020-04-17 00:00:00 -0400"
+      "tags"     : "Conservation Tech, Data, Geospatial",
+      "url"      : "https://www.azavea.com/blog/2018/08/28/convert-geodatabase-to-vector-tiles/",
+      "date"     : "2018-08-28 00:00:00 -0500"
     } ,
   
     {
-      "title"    : "Separate a Mapbox Geocoder Address Search Box from the Map",
+      "title"    : "Exploring Protected Wildlife Habitat for Every Property in New Jersey",
       "category" : "",
-      "tags"     : "JavaScript, CSS, Design, Mapbox",
-      "url"      : "/blog/separate-Mapbox-address-search",
-      "date"     : "2020-03-31 00:00:00 -0400"
+      "tags"     : "Conservation Tech, Data, Geospatial",
+      "url"      : "https://www.azavea.com/blog/2018/08/27/new-jersey-wildlife-habitat/",
+      "date"     : "2018-08-27 00:00:00 -0500"
     } ,
   
     {
-      "title"    : "Multiple Layouts with Different Data for One Area of Interest in ArcGIS Pro",
+      "title"    : "Trajectory of Geospatial Open Source Innovation Discussed at FOSS4G NA",
       "category" : "",
-      "tags"     : "Cartography, Design, GIS, ArcGIS Pro",
-      "url"      : "/blog/ArcGIS-map-series-different-data",
-      "date"     : "2020-03-31 00:00:00 -0400"
+      "tags"     : "Data, Geospatial",
+      "url"      : "https://www.azavea.com/blog/2018/05/25/trajectory-of-geospatial-open-source-innovation-discussed-at-foss4g-na/",
+      "date"     : "2018-05-25 00:00:00 -0500"
     } ,
   
     {
-      "title"    : "Shadow Effect on Point Symbols in ArcGIS Pro",
+      "title"    : "HOTLunch&amp;colon; Volunteer Your Lunch Break to Support Disaster Relief Efforts",
       "category" : "",
-      "tags"     : "Cartography, Design, GIS, ArcGIS Pro",
-      "url"      : "/blog/ArcGIS-point-symbol-shadow-effect",
-      "date"     : "2020-03-25 00:00:00 -0400"
+      "tags"     : "Data, Geospatial",
+      "url"      : "https://www.azavea.com/blog/2017/10/02/hotlunch-volunteer-lunch-break-support-disaster-relief-efforts/",
+      "date"     : "2017-10-02 00:00:00 -0500"
     } 
   
 ]
