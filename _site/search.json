@@ -1,25 +1,33 @@
 [
   
     {
-      "title"    : "Build Your Land Trust Tech Stack",
-      "category" : "",
-      "tags"     : "Cartography, Design, Mapping, Project",
-      "url"      : "/blog/build-your-land-trust-tech-stack",
-      "date"     : "2021-10-22 00:00:00 -0500"
-    } ,
-  
-    {
       "title"    : "The Story Behind the Story&amp;colon; Why I Wrote Map Projections for Babies",
       "category" : "",
       "tags"     : "Cartography, Design, Mapping, Project",
       "url"      : "/blog/story-behind-the-story",
-      "date"     : "2021-09-07 00:00:00 -0500"
+      "date"     : "2021-11-10 00:00:00 -0600"
+    } ,
+  
+    {
+      "title"    : "Build a Tech Stack for Your Nonprofit Land Trust",
+      "category" : "",
+      "tags"     : "Conservation, Technology",
+      "url"      : "/blog/build-your-land-trust-tech-stack",
+      "date"     : "2021-10-24 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Using ArcMap, R, and Adobe Illustrator to Create Data Driven Infographics",
+      "category" : "",
+      "tags"     : "Design, Geospatial, Technology",
+      "url"      : "https://www.azavea.com/blog/2018/10/16/using-arcmap-r-and-adobe-illustrator-to-create-data-driven-infographics/",
+      "date"     : "2018-10-16 00:00:00 -0500"
     } ,
   
     {
       "title"    : "How to Convert Geodatabase Spatial Data and Related Tables to Vector Tiles",
       "category" : "",
-      "tags"     : "Conservation Tech, Data, Geospatial",
+      "tags"     : "Conservation, Geospatial, Technology",
       "url"      : "https://www.azavea.com/blog/2018/08/28/convert-geodatabase-to-vector-tiles/",
       "date"     : "2018-08-28 00:00:00 -0500"
     } ,
@@ -27,7 +35,7 @@
     {
       "title"    : "Exploring Protected Wildlife Habitat for Every Property in New Jersey",
       "category" : "",
-      "tags"     : "Conservation Tech, Data, Geospatial",
+      "tags"     : "Conservation, Design, Geospatial, Technology",
       "url"      : "https://www.azavea.com/blog/2018/08/27/new-jersey-wildlife-habitat/",
       "date"     : "2018-08-27 00:00:00 -0500"
     } ,
@@ -35,7 +43,7 @@
     {
       "title"    : "Trajectory of Geospatial Open Source Innovation Discussed at FOSS4G NA",
       "category" : "",
-      "tags"     : "Data, Geospatial",
+      "tags"     : "Geospatial, Technology",
       "url"      : "https://www.azavea.com/blog/2018/05/25/trajectory-of-geospatial-open-source-innovation-discussed-at-foss4g-na/",
       "date"     : "2018-05-25 00:00:00 -0500"
     } ,
@@ -43,7 +51,7 @@
     {
       "title"    : "HOTLunch&amp;colon; Volunteer Your Lunch Break to Support Disaster Relief Efforts",
       "category" : "",
-      "tags"     : "Data, Geospatial",
+      "tags"     : "Geospatial",
       "url"      : "https://www.azavea.com/blog/2017/10/02/hotlunch-volunteer-lunch-break-support-disaster-relief-efforts/",
       "date"     : "2017-10-02 00:00:00 -0500"
     } 
