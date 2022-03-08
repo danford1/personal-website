@@ -1,6 +1,6 @@
 ---
 title: HOTLunch&colon; Volunteer Your Lunch Break to Support Disaster Relief Efforts
-tags: [Data, Geospatial]
+tags: [Geospatial]
 image: https://2rct3i2488gxf9jvb1lqhek9-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/2017_09_27-hot-lunch-1000x620.jpg
 style: border
 color: blog-card
