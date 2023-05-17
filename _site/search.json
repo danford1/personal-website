@@ -1,22 +1,6 @@
 [
   
     {
-      "title"    : "The Story Behind the Story&amp;colon; Why I Wrote Map Projections for Babies",
-      "category" : "",
-      "tags"     : "Cartography, Design, Mapping, Project",
-      "url"      : "/blog/story-behind-the-story",
-      "date"     : "2021-11-10 00:00:00 -0600"
-    } ,
-  
-    {
-      "title"    : "Build a Tech Stack for Your Nonprofit Land Trust",
-      "category" : "",
-      "tags"     : "Conservation, Technology",
-      "url"      : "/blog/build-your-land-trust-tech-stack",
-      "date"     : "2021-10-24 00:00:00 -0500"
-    } ,
-  
-    {
       "title"    : "Using ArcMap, R, and Adobe Illustrator to Create Data Driven Infographics",
       "category" : "",
       "tags"     : "Design, Geospatial, Technology",
